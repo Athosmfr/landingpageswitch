@@ -1,0 +1,759 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  background: #1C9DC6;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dfdfdf;
+  padding: 16px 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-menu {
+  border: none;
+  font-size: 24px;
+  color: red;
+  background: #dfdfdf;
+}
+
+
+.cabecalho-logo {
+  width: 100px;
+}
+
+.cabecalho-dark {
+  font-size: 24px;
+  border: none;
+  color: red;
+}
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  background-color: #C61C1C;
+  width: 45vw;
+  height: 90vh;
+
+  position: absolute;
+  top: 6.9vh;
+  left: -100vw;
+  transition: 00.3s;
+  font-weight: 700;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.menu-lateral--ativo {
+  left: 0;
+  transition: 0.3s
+}
+
+.menu-lateral-item {
+  padding: 16px;
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral-item:hover{
+  padding-left: 52px;
+  color: white;
+}
+
+.menu-lateral-item--ativo {
+  color: white;
+  border-left: 8px solid white;
+  padding-left: 52px;
+}
+
+.secao-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.foto-principal {
+  width: 300px;
+  margin-top: 30px;
+  border: 1px solid #0000005d;
+  border-radius: 80%;
+  background-color: #c61c33b0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 36px;
+}
+
+
+.logo-switch {
+  width: 120px;
+}
+
+.titulo-intro {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(8, 8, 8);
+  margin-left: 30px;
+  border-top: 0.3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 0.3px solid rgba(0, 0, 0, 0.6);
+  padding: 25px 0;
+  text-align: center;
+}
+
+.caixa-texto-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.texto-intro {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 32px 32px;
+  background: linear-gradient(#C61C1C,#c61c33);
+  color: white;
+  line-height: 1.5rem ;
+}
+
+.caixa-icones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  background-color: rgb(10, 10, 10);
+}
+
+.caixa-icone-prim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icone-tv {
+  width: 140px;
+  color: white;
+  align-self: center;
+  justify-self: center;
+}
+
+.caixa-icone-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-icone-terc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-icone {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding-top: 10px;
+}
+
+.texto-icone {
+  font-size: 18px;
+  color: white;
+  padding: 24px 32px 62px 32px;
+  line-height: 1.5rem;
+}
+
+.icone-tablet {
+  width: 140px;
+}
+
+.icone-switch {
+  width: 140px;
+  padding: 30px 0;
+}
+
+.joycon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-joycon {
+  width: 280px;
+  padding: 40px 0 20px 0px;
+  background: #ffffff;
+}
+
+.joycon-img-back {
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-joycon {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 30px 32px 20px;
+  align-self:flex-start
+}
+
+.texto-base-joycon {
+  font-size: 18px;
+  padding: 8px 32px;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-align: justify;
+}
+
+.funcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-top: 30px;
+  background: rgb(10, 10, 10);
+  padding-bottom: 30px;
+}
+
+.titulo-base-funcoes {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0 0;
+  color: white;
+}
+
+.base-funcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.func-outros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icone-funcao {
+  width: 80px;
+  padding: 45px 0 45px;
+}
+
+.titulo-mp {
+  font-size: 20px;
+  color: white;
+  padding: 10px 32px;
+  align-self: flex-start;
+
+}
+
+.texto-funcao {
+  color: white;
+  font-size: 18px;
+  line-height: 1.3rem;
+  padding: 5px 32px;
+  text-align:justify;
+}
+
+.texto-funcao-obs {
+  color: white;
+  line-height: 1.2rem;
+  padding: 25px 32px 5px;
+  text-align:justify;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.jogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(#C61C1C,#c61c33);
+  padding: 30px 0;
+}
+
+.titulo-jogos {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding: 18px 0;
+}
+
+.texto-intro-jogos {
+  color: white;
+  font-size: 18px;
+  line-height: 1.2rem;
+  padding: 10px 32px 30px;
+  text-align: justify;
+}
+
+.caixa-jogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-jogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.imagem-jogo {
+  width: 300px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.805);
+}
+
+.texto-sob-jogos {
+  color: white;
+  font-size: 20px;
+  line-height: 1.2rem;
+  padding: 50px 32px 0px;
+  text-align: justify;
+}
+
+.parental-jogo {
+  width: 300px;
+  padding: 0 0 40px;
+}
+
+.titulo-controle-pais {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2rem;
+  padding: 10px 32px 0px;
+  text-align: justify;
+}
+
+.texto-controle-pais {
+  color: white;
+  font-size: 20px;
+  line-height: 1.2rem;
+  padding: 20px 32px 0px;
+  text-align: justify;
+}
+
+.especificacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.titulo-esp {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.caixa-esp--sep {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 0px 0;
+  grid-template-areas: "titulo-especificacao texto-esp";
+  border-top: 1px solid rgba(0, 0, 0, 0.405);
+}
+
+.titulo-especificacao {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1.5rem 2rem;
+  border-right: 2px solid #131313;
+  width: 50%;
+}
+
+.texto-esp {
+  font-size: 14px;
+  padding: 16px 32px 16px 0;
+  justify-self: center;
+  text-align: start;
+  margin-top: 12px;
+}
+
+.esp-mais {
+  margin-top: 30px;
+  font-size: 18px;
+  border: none;
+  font-weight: 700;
+  background-color: #1C9DC6;
+}
+
+.fa-solid {
+  font-size: 16px;
+}
+
+.esp-mais:active {
+  color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .menu-lateral {
+    top: 7.8vh;
+  }
+
+  .image-joycon {
+    padding: 30px 14rem 30px;
+  }
+  
+  .titulo-joycon {
+    align-self: center;
+  }
+
+  .texto-intro {
+    text-align: center;
+    padding: 32px 10rem;
+  }
+
+  .texto-icone {
+    padding: 24px 10rem 62px;
+  }
+
+  .caixa-joycon1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caixa-joycon2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caixa-joycon3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-base-joycon {
+    align-self: center;
+    text-align: center;
+    padding: 0 10rem;
+  }
+
+  .titulo-mp {
+    align-self: center;
+  }
+
+  .texto-funcao {
+    align-self: center;
+    text-align: center;
+    padding: 16px 10rem;
+  }
+
+  .texto-intro-jogos {
+    padding: 10px 10rem 32px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .cabecalho-dark {
+    display: none;
+  }
+
+  .cabecalho-menu {
+    display: none;
+  }
+
+  .menu-lateral {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    height: auto;
+    justify-content:space-between;
+    border: none;
+    align-items: center;
+    top: 0;
+    background: none;
+    width: 100vw;
+    margin-top: 5px;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  .menu-lateral-item {
+    background: none;
+    align-self: center;
+    color: #000000;
+    justify-content: space-between;
+
+  }
+
+  #menu-espec {
+    padding-right: 52px;
+  }
+
+  #menu-funcao {
+    margin-right: 100px;
+    padding: 0;
+  }
+
+  #menu-jogos {
+    margin-left: 100px;
+    padding: 0;
+  }
+
+  .menu-lateral-item:hover{
+    color: #131313;
+    background: none;
+  }
+  
+  .menu-lateral-item--ativo {
+    color: #131313;
+    border: none;
+    background: none;
+  }
+
+  .cabecalho {
+    justify-content: space-around;
+    width: 100vw;
+    padding: 16px 0;
+  }
+
+  .menu-lateral {
+    width: 20vw;
+  }
+
+  .secao-principal {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 2rem 20rem 10rem 2rem;
+  }
+
+  .foto-principal {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 700px;
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .intro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-switch {
+    margin-left: 30px;
+  }
+
+  .texto-intro {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding: 30px;
+  }
+
+  .caixa-icones {
+    display: grid;
+    grid-template-columns: 12rem auto auto auto 12rem;
+    grid-template-rows: 3rem auto auto auto 3rem;
+  }
+
+  .caixa-icone-prim {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .texto-icone {
+    padding: 20px 0;
+  }
+
+  .caixa-icone-sec {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .caixa-icone-terc {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .image-joycon {
+    padding: 30px 22rem;
+  }
+
+  .caixa-joycon {
+    display: grid;
+    grid-template-columns: 2rem auto auto auto 2rem;
+    grid-template-rows: 2rem auto auto 2rem;
+    align-items: flex-start;
+  }
+
+  .caixa-joycon1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .caixa-joycon2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+
+  .caixa-joycon3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+
+  .texto-base-joycon {
+    padding: 10px 20px;
+  }
+
+  .base-funcoes {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+    grid-template-rows: 1rem auto auto auto 3rem;
+  }
+
+  .online {
+    grid-column-start: 2;
+    grid-template-columns: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    margin: 0px 40px 0px;
+  }
+
+  .func-outros {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .texto-funcao {
+    padding: 16px 0px;
+    width: 350px;
+  }
+
+  #multi-on {
+    margin-top: 60px;
+  }
+
+  #texto-obs {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .img-jogos {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+    grid-template-rows: 1rem 1fr 1fr 1rem;
+    column-gap: 20px;
+  }
+
+  #supersmash {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #pokemon {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 152px;
+  }
+
+  #zelda {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #kart {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .intro {
+    margin-left: 150px;
+  }
+  
+  .foto-principal {
+    margin-right: 150px;
+  }
+}
